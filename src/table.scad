@@ -1,25 +1,32 @@
 include <tubing.scad>;
 
-square_tube(1000, 20, 20, 1);
+height = 1000;
+lenght = 2000;
+width = 1500;
+
+tube_size = 20;
+tube_thickness =1;
+
+square_tube(height, tube_size, tube_size, tube_thickness);
 rotate(a = [0, 90, 0]) {
-  square_tube(2000, 20, 20, 1);
+  square_tube(lenght, tube_size, tube_size, tube_thickness);
 }
-translate([2000, 0, 0]) {
-  square_tube(1000, 20, 20, 1);
+translate([lenght, 0, 0]) {
+  square_tube(height, tube_size, tube_size, tube_thickness);
 }
 
-translate([0, 1000, 0]) {
-  square_tube(1000, 20, 20, 1);
+translate([0, width, 0]) {
+  square_tube(height, tube_size, tube_size, tube_thickness);
   rotate(a = [0, 90, 0]) {
-    square_tube(2000, 20, 20, 1);
+  square_tube(lenght, tube_size, tube_size, tube_thickness);
   }
   rotate(a = [90, 0, 0]) {
-    square_tube(1000, 20, 20, 1);
+    square_tube(width, tube_size, tube_size, tube_thickness);
   }
 }
-translate([2000, 1000, 0]) {
-  square_tube(1000, 20, 20, 1);
+translate([lenght, width, 0]) {
+  square_tube(height, tube_size, tube_size, tube_thickness);
   rotate(a = [90, 0, 0]) {
-    square_tube(1000, 20, 20, 1);
+  square_tube(width, tube_size, tube_size, tube_thickness);
   }
 }
