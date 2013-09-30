@@ -16,3 +16,9 @@ TODO
 - Design the holes for the screws
 - Screws
 - Make assembly animation.
+
+Licence
+-------
+
+This is total [beerware](https://en.wikipedia.org/wiki/Beerware) and you *must* buy me a beer if you built it :)
+
