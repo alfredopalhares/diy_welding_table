@@ -8,9 +8,9 @@ module top_plate(height, width, thinkness, hole_radius) {
   hole_height = thinkness + 2;
 
   difference() {
-    cube([ height, width, thickness]);
-      for ( i = [40 : 100 : height - 20]) {
-        for ( j = [40 : 100 : width - 20]) {
+    cube([ width, height, thickness]);
+      for ( i = [40 : 100 : width - 20]) {
+        for ( j = [40 : 100 : height - 20]) {
         // Move to minus one because of the green
           translate([ i,j,-1]) {
             cylinder(15, hole_radius, hole_radius);
