@@ -22,3 +22,7 @@ Licence
 
 This is total [beerware](https://en.wikipedia.org/wiki/Beerware) and you *must* buy me a beer if you built it :)
 
+Contact
+-------
+
+Alfredo Palhares <masterkorp@masterkorp.net>
