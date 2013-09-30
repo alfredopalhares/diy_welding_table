@@ -1,12 +1,14 @@
 include <tubing.scad>;
+include <top_plate.scad>;
 
 height = 1000;
 lenght = 2000;
-width = 1500;
+width = 1200;
 
 tube_size = 20;
 tube_thickness =1;
 
+// Table
 // Left corner
 square_tube(height, tube_size, tube_size, tube_thickness);
 // need to translate the tube size so the tubing does not overlap
@@ -37,3 +39,6 @@ translate([lenght, width, 0]) {
     square_tube(width - tube_size, tube_size, tube_size, tube_thickness);
   }
 }
+
+//Plates
+top_plate(1200, 300, 2, 10);
